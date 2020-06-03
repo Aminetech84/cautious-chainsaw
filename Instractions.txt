@@ -1,0 +1,9 @@
+1- git clone from https://github.com/Aminetech84/ReactTailwindScssParcel.git
+2- delete .git
+3- git init & git add . & git commit -m "first commit"
+4- git remote add origin https://github.com/Aminetech84/$Repo_Name.git
+5- git push -u origin master
+6- npm i and npm build
+7- cd dist and do step 3 and 4 in this folder
+8- git branch -b deploy
+9- git push -u origin deploy
