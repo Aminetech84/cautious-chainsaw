@@ -5,5 +5,5 @@
 5- git push -u origin master
 6- npm i and npm build
 7- cd dist and do step 3 and 4 in this folder
-8- git branch -b deploy
+8- git checkout -b deploy
 9- git push -u origin deploy
