@@ -1,0 +1,145 @@
+
+/* General rules and SCSS superpowers */
+
+/* Composing */
+
+@import "./scssParts/colors";
+
+
+/* variables */
+
+$primaryColor: #f4f4f4;
+
+#header {
+    background-color: $primaryColor;
+}
+
+/* Style a child elemnt in the parent element ** Nesting ** */
+#header {
+    background-color: $primaryColor;
+
+    button {
+        background-color: $primaryColor;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+
+/* Mixins */
+@mixin heading-font {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    @include heading-font;
+}
+
+// with parameters
+@mixin font-size($n) {
+    font-size: $n * 1.2em;
+  }
+  body {
+    @include font-size(2);
+  }
+
+
+
+/* Extend */
+.button {
+    color: blue;
+}
+
+.push-button {
+    @extend .button;
+}
+
+/* Loops and conditionals also posible with Scss and 
+ * more in : https://devhints.io/sass  
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+h1 {
+    color: red;
+}*/
+/*
+nav {
+    object-fit: cover;
+    position: fixed;
+}*/
+/*
+.container {
+    width: 100%;
+}*/
+
+.bgg {
+     background-color: #6d7a71;
+
+}
+
+.f {
+    color: blue;
+    z-index: 99999999;
+}
+/*
+hr {
+    
+    
+.trans--grow{
+  transition: ease-in-out;
+    transition: width 5s  ease-out;
+    width : 0%;
+}
+:hover {
+    width:100%;
+  }
+
+}*/
+/*
+.g {
+    width: 100%;
+    height: 800px;
+}*/
+
+/*
+@media (max-width: 640px) {
+ .gm {
+     display: none;
+ }
+ .gm1 {
+     width: 100%;
+ }
+}
+*/
+
+
+
+
+#bg-vid {
+    object-fit: cover;
+     width: 100vw;
+    height: 100hv;
+   /*position: relative;*/
+    top: 0;
+    left: 0;
+}
