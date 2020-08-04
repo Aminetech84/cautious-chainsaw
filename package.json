@@ -23,7 +23,7 @@
   "author": "Amine Ouldaouali",
   "license": "ISC",
   "dependencies": {
-    "gsap": "^3.3.1",
+    "gsap": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest"
@@ -32,7 +32,7 @@
     "autoprefixer": "latest",
     "parcel-bundler": "latest",
     "postcss-cli": "latest",
-    "sass": "^1.26.8",
+    "sass": "latest",
     "tailwindcss": "latest"
   }
 }
